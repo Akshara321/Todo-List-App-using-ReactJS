@@ -56,13 +56,13 @@ const [Items,setItems]=useState([]);
         <div className="center_div">
             <br/>
             <h1>
-                TOdO List
+                ToDo List
             </h1>
             <br/>
-            <input type="text" placeholder="Add an Item" onChange={itemEvent}/>
-            value={inputList}
+            <input type="text" placeholder="Add an Item" onChange={itemEvent} value={inputList}></input>
+            
             <button onClick={listofItems}> + </button>
-            <ol>
+            <ol> 
              {Items.map((itemval,index)=>{
                return <ToDoLists key={index}
                 id={index} 
